@@ -200,7 +200,7 @@ async def _(event):
             "__Current Loaded OS: CrDroid OS__\n\n**To Boot Other OS, Use The Following Trigger:**\n✅ `.Macos`\n☑️ `.Windows`\n☑️ `.Linux`\n☑️ `.Stock`",
             "__Current Loaded OS: CrDroid OS__\n\n**To Boot Other OS, Use The Following Trigger:**\n✅ `.Macos`\n✅ `.Windows`\n☑️ `.Linux`\n☑️ `.Stock`",
             "__Current Loaded OS: CrDroid OS__\n\n**To Boot Other OS, Use The Following Trigger:**\n✅ `.Macos`\n✅ `.Windows`\n✅ `.Linux`\n☑️ `.Stock`",
-            "__Current Loaded OS: CrDroid OS__\n\n**To Boot Other OS, Use The Following Trigger:**\n✅ `.Macos`\n✅ `.Windows`\n✅ `.Linux`\n✅ `.Stock`\n\nDeveloped By: @Mayur_Karaniya"
+            "__Current Loaded OS: CrDroid OS__\n\n**To Boot Other OS, Use The Following Trigger:**\n✅ `.Macos`\n✅ `.Windows`\n✅ `.Linux`\n✅ `.Stock`\n\nDeveloped By: @Priest"
  ]
 
         for i in animation_ttl:
