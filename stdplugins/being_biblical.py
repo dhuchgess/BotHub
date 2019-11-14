@@ -1,4 +1,4 @@
-"""Say something from the Holy Bible... Syntax: .BBL by @Mayur_Karaniya
+"""Say something from the Holy Bible... Syntax: .BBL
 |
 Quotes credits: Being Biblical Channel : @BeingBiblical"""
 
@@ -22,7 +22,7 @@ async def _(event):
 
         return
 
-    await event.edit("LAKHU CHU 1 MINUTE !...")
+    await event.edit("Loading.......")
 
     await asyncio.sleep(1)
 
