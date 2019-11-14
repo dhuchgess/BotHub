@@ -18,7 +18,7 @@ async def set_not_afk(event):
         try:
             await borg.send_message(  # pylint:disable=E0602
                 Config.PRIVATE_GROUP_BOT_API_ID,  # pylint:disable=E0602
-                "⬛⬛⬛⬛⬛\n⬛☑️☑️☑️⬛\n⬛☑️☑️☑️⬛\n⬛☑️☑️☑️⬛\n⬛⬛⬛⬛⬛"
+                "Priest online now"
             )
         except Exception as e:  # pylint:disable=C0103,W0703
             await borg.send_message(  # pylint:disable=E0602
@@ -48,7 +48,7 @@ async def _(event):
             borg.storage.afk_time = datetime.datetime.now()  # pylint:disable=E0602
         borg.storage.USER_AFK.update({"yes": reason})  # pylint:disable=E0602
         if reason:
-            await event.edit(f"⬛⬛⬛⬛⬛\n⬛✅✅✅⬛\n⬛✅✅✅⬛\n⬛✅✅✅⬛\n⬛⬛⬛⬛⬛")
+            await event.edit(f"Priest online now")
         else:
             await event.edit(f"Set AFK mode to True")
         await asyncio.sleep(5)
@@ -106,7 +106,7 @@ async def on_afk(event):
             else:
                 afk_since = f"`{int(seconds)}s` **ago**"
         msg = None
-        message_to_reply = f"AFK right-now  \n\n**Last Seen: I don't wanna tell you.** " + \
+        message_to_reply = f"AFK right-now  \n\n**Last Seen: 10000 BC ago.** " + \
             f"\n\n__Reason:__ {reason}" \
             if reason \
             else f"I'm away right now. If you need anything, leave a message after the beep:\n`beeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeep`!"
