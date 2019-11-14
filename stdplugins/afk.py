@@ -50,7 +50,7 @@ async def _(event):
         if reason:
             await event.edit(f"Priest online now")
         else:
-            await event.edit(f"Set AFK mode to True")
+            await event.edit(f"AFK active")
         await asyncio.sleep(5)
         await event.delete()
         try:
