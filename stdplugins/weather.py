@@ -1,5 +1,5 @@
 """Get weather data using OpenWeatherMap
-Syntax: .weather <Location>
+Syntax: .weather2 <Location>
 .wttr <location> """
 
 import aiohttp
@@ -9,7 +9,7 @@ from datetime import tzinfo, datetime
 from uniborg.util import admin_cmd
 
 
-@borg.on(admin_cmd(pattern="weather (.*)"))
+@borg.on(admin_cmd(pattern="weather2 (.*)"))
 async def _(event):
     if event.fwd_from:
         return
