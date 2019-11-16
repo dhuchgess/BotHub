@@ -1,6 +1,6 @@
 """Quick Response Codes
 Available Commands
-.getqr
+.getqr2
 .makeqr2 <long text to include>"""
 from telethon import events
 import asyncio
@@ -15,7 +15,7 @@ def progress(current, total):
     logger.info("Downloaded {} of {}\nCompleted {}".format(current, total, (current / total) * 100))
  
  
-@borg.on(admin_cmd("getqr"))
+@borg.on(admin_cmd("getqr2"))
 async def _(event):
     if event.fwd_from:
         return
