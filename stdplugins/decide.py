@@ -1,11 +1,11 @@
 """Quickly make a decision
-Syntax: .decide"""
+Syntax: .decide2"""
 from telethon import events
 import requests
 from uniborg.util import admin_cmd
 
 
-@borg.on(admin_cmd("decide"))
+@borg.on(admin_cmd("decide2"))
 async def _(event):
     if event.fwd_from:
         return
