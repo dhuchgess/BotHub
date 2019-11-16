@@ -1,7 +1,7 @@
 """Quick Response Codes
 Available Commands
 .getqr
-.makeqr <long text to include>"""
+.makeqr2 <long text to include>"""
 from telethon import events
 import asyncio
 from datetime import datetime
@@ -59,13 +59,13 @@ async def _(event):
     await event.edit(qr_contents)
  
  
-@borg.on(admin_cmd("makeqr ?(.*)"))
+@borg.on(admin_cmd("makeqr2 ?(.*)"))
 async def _(event):
     if event.fwd_from:
         return
     start = datetime.now()
     input_str = event.pattern_match.group(1)
-    message = "SYNTAX: `.makeqr <long text to include>`"
+    message = "SYNTAX: `.makeqr2 <long text to include>`"
     reply_msg_id = event.message.id
     if input_str:
         message = input_str
@@ -88,7 +88,7 @@ async def _(event):
         else:
             message = previous_message.message
     else:
-        message = "SYNTAX: `.makeqr <long text to include>`"
+        message = "SYNTAX: `.makeqr2 <long text to include>`"
     qr = qrcode.QRCode(
         version=1,
         error_correction=qrcode.constants.ERROR_CORRECT_L,
