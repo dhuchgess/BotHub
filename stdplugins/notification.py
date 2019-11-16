@@ -20,6 +20,7 @@ PM_WARNS = {}
 PREV_REPLY_MESSAGE = {}
 
 
+
 BAALAJI_TG_USER_BOT = "My Master hasn't approved you to PM."
 TG_COMPANION_USER_BOT = "Please wait for his response and don't spam his PM."
 UNIBORG_USER_BOT_WARN_ZERO = "I am currently offline. Please do not SPAM me."
@@ -149,6 +150,7 @@ async def approve_p_m(event):
         await event.edit(APPROVED_PMs)"""
 
 
+"""
 @borg.on(events.NewMessage(incoming=True))
 async def on_new_private_message(event):
     if Config.PM_LOGGR_BOT_API_ID is None:
@@ -190,8 +192,10 @@ async def on_new_private_message(event):
     if not no_log_pms_sql.is_approved(chat_id):
         # log pms
         await do_log_pm_action(chat_id, message_text, message_media)
+"""
 
 
+"""
 @borg.on(events.ChatAction(blacklist_chats=Config.UB_BLACK_LIST_CHAT))
 async def on_new_chat_action_message(event):
     if Config.PM_LOGGR_BOT_API_ID is None:
@@ -218,6 +222,8 @@ async def on_new_chat_action_message(event):
                 # file=message_media,
                 silent=True
             )
+"""
+
 
 
 @borg.on(events.Raw())
@@ -247,6 +253,7 @@ async def on_new_channel_message(event):
         )
 
 
+
 """@borg.on(events.Raw())
 async def _(event):
     if Config.PM_LOGGR_BOT_API_ID is None:
@@ -264,6 +271,7 @@ async def _(event):
         logger.info(event.stringify())"""
 
 
+"""
 async def do_pm_permit_action(chat_id, event):
     if chat_id not in PM_WARNS:
         PM_WARNS.update({chat_id: 0})
@@ -311,3 +319,4 @@ async def do_log_pm_action(chat_id, message_text, message_media):
         file=message_media,
         silent=True
     )
+"""
