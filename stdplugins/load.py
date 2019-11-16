@@ -242,7 +242,7 @@ async def _(event):
 
             "😢",
 
-            "‎**Repo by @Mayur_Karaniya**",
+            "‎**Repo by @sashn9**",
  
             "😁",
 
@@ -252,7 +252,7 @@ async def _(event):
 
             "😢",
 
-            "‎github.com/mkaraniya/BotHub",
+            "‎github.com/shn999/BotHub",
 
             "__**BotHub ™️ Is BeHiNd You....**__"
 
