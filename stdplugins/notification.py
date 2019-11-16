@@ -84,7 +84,7 @@ async def set_no_log_p_m(event):
                 await event.delete()
 
 
-@borg.on(admin_cmd(pattern="apm ?(.*)"))
+""" @borg.on(admin_cmd(pattern="apm ?(.*)"))
 async def approve_p_m(event):
     if event.fwd_from:
         return
@@ -146,7 +146,7 @@ async def approve_p_m(event):
             )
             await event.delete()
     else:
-        await event.edit(APPROVED_PMs)
+        await event.edit(APPROVED_PMs)"""
 
 
 @borg.on(events.NewMessage(incoming=True))
