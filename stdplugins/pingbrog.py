@@ -1,11 +1,11 @@
-""" `.ping' to getyour ping"""
+""" `.ping2' to getyour ping"""
 
 from telethon import events
 from datetime import datetime
 from uniborg.util import admin_cmd
 
 
-@borg.on(admin_cmd("ping"))
+@borg.on(admin_cmd("ping2"))
 async def _(event):
     if event.fwd_from:
         return
