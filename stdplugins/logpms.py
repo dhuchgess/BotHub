@@ -1,5 +1,7 @@
 """Log PMs
 Check https://t.me/tgbeta/3505"""
+
+"""
 import asyncio
 from telethon import events
 from telethon.tl import functions, types
@@ -39,3 +41,4 @@ async def approve_p_m(event):
                 await event.edit("Won't Log Messages from this chat")
                 await asyncio.sleep(3)
                 await event.delete()
+"""
