@@ -213,6 +213,7 @@ async def _(event):
 #    else:
 #        await event.edit("Unknown Command")
 
+"""
 @borg.on(events.NewMessage(pattern=r"\.date", outgoing=True))
 async def _(event):
     if event.fwd_from:
@@ -251,6 +252,7 @@ async def _(event):
     await event.edit(f"{OUTPUT}`{stdout.decode()}`")
 #    else:
 #        await event.edit("Unknown Command")
+"""
 
 @borg.on(events.NewMessage(pattern=r"\.env", outgoing=True))
 async def _(event):
