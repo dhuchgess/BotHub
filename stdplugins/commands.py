@@ -27,12 +27,14 @@ async def _(event):
         await event.edit(input_str)
 
         animation_chars = [
+            
+            "https://telegra.ph/BotHub-Commands-11-20"
 
-            "https://telegra.ph/command-list-for-BotHub-Userbot-11-08",
+            #"https://telegra.ph/command-list-for-BotHub-Userbot-11-08",
             
-            "https://github.com/ravana69/UniBorg",
+            #"https://github.com/ravana69/UniBorg",
             
-            "https://github.com/spechide/UniBorg"
+            #"https://github.com/spechide/UniBorg"
         ]
 
         for i in animation_ttl:
