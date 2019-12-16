@@ -152,7 +152,7 @@ async def _(event):
     process = await asyncio.create_subprocess_shell(
         cmd, stdout=asyncio.subprocess.PIPE, stderr=asyncio.subprocess.PIPE
     )
-    OUTPUT = f"**[Sohan's](https://t.me/sashn9) STDPLUGINS:**\n"
+    OUTPUT = f"**[dhuchges](https://t.me/dhuchges) STDPLUGINS:**\n"
     stdout, stderr = await process.communicate()
     if len(stdout) > Config.MAX_MESSAGE_SIZE_LIMIT:
         with io.BytesIO(str.encode(stdout)) as out_file:	
